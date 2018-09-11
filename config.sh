@@ -65,11 +65,10 @@ do
     read -p "confirm? (y/n):" confirmed
 done
 
-mkdir -p "../${projectName}/${projectName}/${projectName}"
 
-specFilePath="../${projectName}/${projectName}.podspec"
-readmeFilePath="../${projectName}/readme.md"
-uploadFilePath="../${projectName}/upload.sh"
+specFilePath="../${projectName}.podspec"
+readmeFilePath="../readme.md"
+uploadFilePath="../upload.sh"
 
 echo "copy to $specFilePath"
 cp -f ./templates/pod.podspec  "$specFilePath"
